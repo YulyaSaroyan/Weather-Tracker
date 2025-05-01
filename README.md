@@ -1,7 +1,7 @@
 # Create a .env file in the project root:
 ```text
 PORT=3000
-POSTGRES_HOST=localhost
+POSTGRES_HOST=postgres-db
 POSTGRES_PORT=5432
 POSTGRES_USER=your_db_user
 POSTGRES_PASSWORD=your_db_password
