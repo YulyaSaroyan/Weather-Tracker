@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    init: true
+    image: postgres:latest
+    container_name: app-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: testpassword
+      POSTGRES_USER: testuser
+      POSTGRES_DB: testdb
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: app
+    ports: 
+      - '3000:3000'
+    depends_on:
+      - postgres-db
+    volumes:
+      - .:/usr/src/app

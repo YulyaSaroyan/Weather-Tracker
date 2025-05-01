@@ -1,0 +1,21 @@
+# Create a .env file in the project root:
+```text
+PORT=3000
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_USER=your_db_user
+POSTGRES_PASSWORD=your_db_password
+POSTGRES_DATABASE=weather_tracker
+OPEN_METEO_API_BASE_URL=https://api.open-meteo.com/v1/forecast
+WEATHER_GEO_API=https://geocoding-api.open-meteo.com/v1
+WEATHER_API=https://api.open-meteo.com/v1
+```
+# Install dependencies
+```bash
+npm install
+```
+
+# Run the project
+```bash
+docker-compose up
+```
