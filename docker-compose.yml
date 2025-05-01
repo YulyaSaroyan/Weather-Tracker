@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   postgres-db:
     init: true
@@ -7,10 +5,8 @@ services:
     container_name: app-postgres
     ports:
       - "5432:5432"
-    environment:
-      POSTGRES_PASSWORD: testpassword
-      POSTGRES_USER: testuser
-      POSTGRES_DB: testdb
+    env_file:
+      - .env
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
 

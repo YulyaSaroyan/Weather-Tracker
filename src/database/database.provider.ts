@@ -15,7 +15,7 @@ export const databaseProviders = [
         port: configService.get<number>('POSTGRES_PORT'),
         username: configService.get<string>('POSTGRES_USER'),
         password: configService.get<string>('POSTGRES_PASSWORD'),
-        database: configService.get<string>('POSTGRES_DATABASE'),
+        database: configService.get<string>('POSTGRES_DB'),
         entities,
         migrations: [join(__dirname, 'migrations/*.{ts,js}')],
         migrationsRun: true, 

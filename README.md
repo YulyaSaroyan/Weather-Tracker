@@ -5,7 +5,7 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 POSTGRES_USER=your_db_user
 POSTGRES_PASSWORD=your_db_password
-POSTGRES_DATABASE=weather_tracker
+POSTGRES_DB=weather_tracker
 WEATHER_GEO_API=https://geocoding-api.open-meteo.com/v1
 WEATHER_API=https://api.open-meteo.com/v1
 ```
